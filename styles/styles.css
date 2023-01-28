@@ -83,7 +83,7 @@
 .feature-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 24px;
 }
 
 .explore-feature>div {
