@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-body{
+body {
     margin: 0;
 }
 
@@ -216,13 +216,13 @@ body{
     border-radius: 8px;
 }
 
-.number{
+.number {
     font-size: 30px;
     font-weight: 600;
     margin: 0;
 }
 
-.item-inf{
+.item-inf {
     color: #727272;
 }
 
@@ -245,20 +245,117 @@ body{
     color: #727272;
 }
 
-.sponsor-img{
+.sponsor-img {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
 }
 
 /* footer section */
-footer{
+footer {
     text-align: center;
     background-color: rgba(255, 144, 14, 0.1);
     margin: 100px 0;
 }
 
-footer p{
+footer p {
     padding: 40px 0;
     margin: 0;
+}
+
+
+/* media query starts */
+
+@media screen and (max-width:576px) {
+
+    /* header section style */
+    .experience{
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .logo-and-nav {
+        flex-direction: column;
+    }
+
+    .nav-ul {
+        padding: 0;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand-info {
+        width: 92%;
+    }
+
+    .brand-title {
+        font-size: 32px;
+    }
+
+    /* explore feature section */
+    .explore-feature {
+        flex-direction: column;
+    }
+
+    .feature-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team {
+        padding: 10px;
+    }
+
+    .feature-info {
+        align-items: center;
+    }
+
+    .feature-info .brand-des {
+        text-align: center;
+    }
+
+    /* feature details section */
+    .feature-details {
+        flex-direction: column;
+        padding: 50px 5px 0;
+    }
+
+
+    /* some facts style */
+
+    .some-fact-box {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .item {
+        margin: 16px;
+    }
+
+    /* sponsor */
+    .sponsor-info {
+        width: 100%;
+    }
+
+    .sponsor-img{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding-top: 20px;
+    }
+
+    .sponsor-info h3{
+        font-Size: 30px;
+    }
+
+    .sp-img img{
+        height: 25px;
+    }
+
+    footer{
+        margin: 42px 0;
+    }
 }
